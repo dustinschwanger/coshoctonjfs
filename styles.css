@@ -117,7 +117,7 @@
   display: flex;
   align-items: center;
   padding: 0.625rem 1rem;
-  font-size: 0.9375rem;
+  font-size: 1.25rem;
   font-weight: 500;
   color: var(--county-blue-dark);
   text-decoration: none;
@@ -176,7 +176,7 @@
 .dropdown-menu li a {
   display: block;
   padding: 0.75rem 1.25rem;
-  font-size: 0.9375rem;
+  font-size: 1.125rem;
   color: var(--county-blue-dark);
   text-decoration: none;
   transition: all 0.2s ease;
@@ -2856,7 +2856,7 @@ a:not(.usa-button):hover {
 .contact-card__text a {
   color: var(--county-blue);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
   transition: color 0.2s ease;
 }
 
