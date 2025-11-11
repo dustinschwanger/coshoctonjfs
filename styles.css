@@ -80,8 +80,12 @@
   gap: 4px;
   background: transparent;
   border: none;
-  padding: 0.5rem;
+  padding: 0.75rem;
   cursor: pointer;
+  min-width: 44px;
+  min-height: 44px;
+  justify-content: center;
+  align-items: center;
 }
 
 .site-header__mobile-toggle span {
@@ -1880,12 +1884,29 @@
   text-decoration: underline;
 }
 
-/* Accessibility: Focus States */
-a:focus,
-button:focus,
-.usa-button:focus {
-  outline: 0.25rem solid var(--county-gold);
-  outline-offset: 0.25rem;
+/* Accessibility: Enhanced Focus States for WCAG 2.2 */
+a:focus-visible,
+button:focus-visible,
+.usa-button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 0.1875rem solid var(--county-gold);
+  outline-offset: 0.125rem;
+  box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25);
+}
+
+/* Ensure focus is always visible, even for mouse users on critical interactive elements */
+.usa-skipnav:focus,
+.site-header__mobile-toggle:focus,
+.dropdown-toggle:focus,
+.usa-accordion__button:focus,
+.chat-widget__send-button:focus,
+.chat-widget__close-button:focus,
+.chat-bubble-mobile:focus {
+  outline: 0.1875rem solid var(--county-gold);
+  outline-offset: 0.125rem;
+  box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25);
 }
 
 /* Mobile Menu Styles */

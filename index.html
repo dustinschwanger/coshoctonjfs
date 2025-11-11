@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Coshocton County Department of Job and Family Services provides assistance with public benefits, child support, child and adult protective services, foster care, adoption, and workforce development.">
   <title>Coshocton County Department of Job & Family Services</title>
 
   <!-- Favicon -->
@@ -24,7 +25,7 @@
 
   <!-- Facebook SDK -->
   <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0" nonce="YOUR_NONCE"></script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"></script>
 
   <!-- Header -->
   <header class="site-header">
@@ -101,7 +102,7 @@
           <div class="chat-widget" id="chatWidget">
             <div class="chat-widget__header">
               <div class="chat-widget__header-content">
-                <i class="fas fa-comments chat-widget__header-icon"></i>
+                <i class="fas fa-comments chat-widget__header-icon" aria-hidden="true"></i>
                 <div class="chat-widget__header-text">
                   <h2 class="chat-widget__title">Ask Us Anything</h2>
                   <p class="chat-widget__subtitle">Get instant help</p>
@@ -109,19 +110,19 @@
               </div>
               <div class="chat-widget__header-actions">
                 <div class="chat-widget__status">
-                  <span class="chat-widget__status-dot"></span>
+                  <span class="chat-widget__status-dot" role="img" aria-label="Online status indicator"></span>
                   <span class="chat-widget__status-text">Online</span>
                 </div>
                 <button class="chat-widget__close-button" id="closeChatButton" aria-label="Close chat">
-                  <i class="fas fa-times"></i>
+                  <i class="fas fa-times" aria-hidden="true"></i>
                 </button>
               </div>
             </div>
 
-            <div class="chat-widget__messages">
+            <div class="chat-widget__messages" role="log" aria-live="polite" aria-atomic="false">
               <div class="chat-message chat-message--bot">
-                <div class="chat-message__avatar">
-                  <i class="fas fa-user-tie"></i>
+                <div class="chat-message__avatar" role="img" aria-label="Support assistant">
+                  <i class="fas fa-user-tie" aria-hidden="true"></i>
                 </div>
                 <div class="chat-message__content">
                   <div class="chat-message__bubble">
@@ -141,8 +142,8 @@
               </div>
 
               <div class="chat-message chat-message--bot">
-                <div class="chat-message__avatar">
-                  <i class="fas fa-user-tie"></i>
+                <div class="chat-message__avatar" role="img" aria-label="Support assistant">
+                  <i class="fas fa-user-tie" aria-hidden="true"></i>
                 </div>
                 <div class="chat-message__content">
                   <div class="chat-message__bubble">
@@ -163,9 +164,9 @@
 
             <div class="chat-widget__input">
               <label for="chat-input-field" class="sr-only">Type your message</label>
-              <input type="text" id="chat-input-field" class="chat-widget__input-field" placeholder="Type your question..." aria-label="Chat message input">
+              <input type="text" id="chat-input-field" class="chat-widget__input-field" placeholder="Type your question..." aria-label="Chat message input" autocomplete="off">
               <button class="chat-widget__send-button" aria-label="Send message">
-                <i class="fas fa-paper-plane"></i>
+                <i class="fas fa-paper-plane" aria-hidden="true"></i>
               </button>
             </div>
           </div>
@@ -173,9 +174,9 @@
       </div>
 
       <!-- Mobile Chat Bubble -->
-      <button class="chat-bubble-mobile" id="openChatButton" aria-label="Open chat">
-        <i class="fas fa-comments"></i>
-        <span class="chat-bubble-mobile__badge">1</span>
+      <button class="chat-bubble-mobile" id="openChatButton" aria-label="Open chat widget">
+        <i class="fas fa-comments" aria-hidden="true"></i>
+        <span class="chat-bubble-mobile__badge" aria-label="1 unread message">1</span>
       </button>
     </section>
 
@@ -530,49 +531,49 @@
             <h2 class="section-heading">Latest Updates</h2>
 
             <article class="news-article">
-              <div class="news-article__image">
+              <div class="news-article__image" role="img" aria-label="News article icon">
                 <i class="fas fa-file-alt" aria-hidden="true"></i>
               </div>
               <div class="news-article__content">
-                <h4 class="news-article__title">
+                <h3 class="news-article__title">
                   <a href="/news/group-home-supervisor-manager">Group Home Supervisor/Manager</a>
-                </h4>
+                </h3>
                 <time class="news-article__date" datetime="2025-10-07">October 7, 2025</time>
               </div>
             </article>
 
             <article class="news-article">
-              <div class="news-article__image">
+              <div class="news-article__image" role="img" aria-label="News article icon">
                 <i class="fas fa-file-alt" aria-hidden="true"></i>
               </div>
               <div class="news-article__content">
-                <h4 class="news-article__title">
+                <h3 class="news-article__title">
                   <a href="/news/fiscal-account-clerk-2">Job Posting: Coshocton County Department of Job and Family Services Fiscal – Account Clerk 2</a>
-                </h4>
+                </h3>
                 <time class="news-article__date" datetime="2025-10-07">October 7, 2025</time>
               </div>
             </article>
 
             <article class="news-article">
-              <div class="news-article__image">
+              <div class="news-article__image" role="img" aria-label="News article icon">
                 <i class="fas fa-file-alt" aria-hidden="true"></i>
               </div>
               <div class="news-article__content">
-                <h4 class="news-article__title">
+                <h3 class="news-article__title">
                   <a href="/news/im-aide-public-assistance">Job Posting: Coshocton County Department of Job and Family Services IM Aide – Public Assistance Division</a>
-                </h4>
+                </h3>
                 <time class="news-article__date" datetime="2025-10-06">October 6, 2025</time>
               </div>
             </article>
 
             <article class="news-article">
-              <div class="news-article__image">
+              <div class="news-article__image" role="img" aria-label="News article icon">
                 <i class="fas fa-file-alt" aria-hidden="true"></i>
               </div>
               <div class="news-article__content">
-                <h4 class="news-article__title">
+                <h3 class="news-article__title">
                   <a href="/news/social-services-worker">Job Posting: Coshocton County Department of Job and Family Services Social Services Worker 2/3</a>
-                </h4>
+                </h3>
                 <time class="news-article__date" datetime="2025-09-30">September 30, 2025</time>
               </div>
             </article>
@@ -586,7 +587,7 @@
             <div class="contact-cards-grid">
               <!-- Director Card -->
               <div class="contact-card">
-                <div class="contact-card__icon">
+                <div class="contact-card__icon" role="img" aria-label="Director">
                   <i class="fas fa-user-tie" aria-hidden="true"></i>
                 </div>
                 <div class="contact-card__content">
@@ -599,7 +600,7 @@
 
               <!-- Hours Card -->
               <div class="contact-card">
-                <div class="contact-card__icon">
+                <div class="contact-card__icon" role="img" aria-label="Office hours">
                   <i class="far fa-clock" aria-hidden="true"></i>
                 </div>
                 <div class="contact-card__content">
@@ -612,7 +613,7 @@
 
               <!-- Address Card -->
               <div class="contact-card">
-                <div class="contact-card__icon">
+                <div class="contact-card__icon" role="img" aria-label="Address">
                   <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                 </div>
                 <div class="contact-card__content">
@@ -626,7 +627,7 @@
 
               <!-- Phone Card -->
               <div class="contact-card">
-                <div class="contact-card__icon">
+                <div class="contact-card__icon" role="img" aria-label="Phone">
                   <i class="fas fa-phone" aria-hidden="true"></i>
                 </div>
                 <div class="contact-card__content">
@@ -639,7 +640,7 @@
 
               <!-- Email Card -->
               <div class="contact-card">
-                <div class="contact-card__icon">
+                <div class="contact-card__icon" role="img" aria-label="Email">
                   <i class="fas fa-envelope" aria-hidden="true"></i>
                 </div>
                 <div class="contact-card__content">

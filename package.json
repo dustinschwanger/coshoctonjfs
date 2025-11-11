@@ -1,0 +1,25 @@
+{
+  "name": "coshocton-jfs-website",
+  "version": "1.0.0",
+  "description": "Coshocton County Department of Job & Family Services Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "government",
+    "public-services",
+    "coshocton",
+    "jfs"
+  ],
+  "author": "Coshocton County DJFS",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "compression": "^1.7.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
